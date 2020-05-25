@@ -4,4 +4,4 @@ select question_id,(sum(case when action='answer' then 1 else 0 end)/sum(case wh
 from survey_log
 group by question_id) a
 order by rate desc
-limit 1
+limit 1com
